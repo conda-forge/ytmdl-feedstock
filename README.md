@@ -1,7 +1,7 @@
 About ytmdl
 ===========
 
-Home: https://ytmdl.deepjyoti30.dev/
+Home: https://github.com/deepjyoti30/ytmdl
 
 Package license: MIT
 
@@ -215,7 +215,4 @@ Feedstock Maintainers
 =====================
 
 * [@HeavyTony2](https://github.com/HeavyTony2/)
-
-
-<!-- dummy commit to enable rerendering -->
 
