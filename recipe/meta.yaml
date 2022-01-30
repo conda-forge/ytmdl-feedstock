@@ -13,7 +13,7 @@ source:
     - setup.py.patch
 
 build:
-  number: 1
+  number: 2
   skip: true   # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -72,7 +72,7 @@ test:
     - pip
 
 about:
-  home: https://ytmdl.deepjyoti30.dev/
+  home: https://github.com/deepjyoti30/ytmdl
   dev_url: https://github.com/deepjyoti30/ytmdl
   summary: Youtube Music Downloader
   license: MIT
