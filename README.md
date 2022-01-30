@@ -1,7 +1,7 @@
 About ytmdl
 ===========
 
-Home: https://ytmdl.deepjyoti30.dev/
+Home: https://github.com/deepjyoti30/ytmdl
 
 Package license: MIT
 
