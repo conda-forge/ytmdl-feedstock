@@ -59,7 +59,7 @@ requirements:
     - spotipy
     - unidecode
     - urllib3
-    - yt-dlp>=2022.03.08.1
+    - yt-dlp >=2022.03.08.1
     - youtube-search-python
     - ytmusicapi
     - beautifulsoup4
