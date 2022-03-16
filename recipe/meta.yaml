@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytmdl-{{ version }}.tar.gz
   sha256: da510e8304a2e1f0152be8095ef8d640305621bd5c383166522ab41547e9c970
+    patches:
+    - setup.py.patch
 
 build:
   number: 1
