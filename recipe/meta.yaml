@@ -38,8 +38,9 @@ requirements:
     - unidecode
     - urllib3
     - youtube-search-python
-    - youtube-dl
+    - yt-dlp
     - ytmusicapi
+    - beautifulsoup4
   run:
     - bs4
     - colorama
@@ -58,9 +59,10 @@ requirements:
     - spotipy
     - unidecode
     - urllib3
-    - youtube-dl
+    - yt-dlp>=2022.03.08.1
     - youtube-search-python
     - ytmusicapi
+    - beautifulsoup4
 
 test:
   imports:
