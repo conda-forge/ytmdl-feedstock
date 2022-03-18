@@ -1,3 +1,12 @@
+From a75ff2eab397f0529247118c634a413197a55fea Mon Sep 17 00:00:00 2001
+From: HeavyTony2 <97621927+HeavyTony2@users.noreply.github.com>
+Date: Fri, 18 Mar 2022 08:34:23 -0400
+Subject: [PATCH] Update setup.py
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 diff --git a/setup.py b/setup.py
 index 4a50f0f..6decdd4 100755
 --- a/setup.py
