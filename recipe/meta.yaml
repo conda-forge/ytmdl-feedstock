@@ -15,7 +15,6 @@ source:
 build:
   noarch: python
   number: 1
-  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -30,7 +29,7 @@ requirements:
     - pip
     - pydes
     - pysocks
-    - python
+    - python >=3.6
     - pyxdg
     - requests
     - rich
@@ -52,7 +51,7 @@ requirements:
     - mutagen
     - pydes
     - pysocks
-    - python
+    - python >=3.6
     - pyxdg
     - requests
     - rich
