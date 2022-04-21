@@ -13,8 +13,10 @@ source:
     - setup.py.patch
 
 build:
+  entry_points:
+    - ytmdl = ytmdl:entry
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
