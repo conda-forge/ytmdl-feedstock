@@ -16,7 +16,7 @@ build:
   entry_points:
     - ytmdl = ytmdl:entry
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -81,6 +81,7 @@ about:
   summary: Youtube Music Downloader
   license: MIT
   license_file: LICENSE
+  description: Download songs from YouTube by getting the audio from YouTube and the metadata from sources like Itunes, Spotify, Gaana etc.
 
 extra:
   recipe-maintainers:
