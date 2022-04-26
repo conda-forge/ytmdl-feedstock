@@ -11,6 +11,8 @@ Summary: Youtube Music Downloader
 
 Development: https://github.com/deepjyoti30/ytmdl
 
+Download songs from YouTube by getting the audio from YouTube and the metadata from sources like Itunes, Spotify, Gaana etc.
+
 Current build status
 ====================
 
