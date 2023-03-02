@@ -33,12 +33,12 @@ requirements:
     - pyxdg
     - requests
     - rich
-    - simber
+    - simber ==0.2.6
     - spotipy
     - unidecode
     - urllib3
     - youtube-search-python
-    - yt-dlp
+    - yt-dlp >=2022.03.08.1
     - ytmusicapi
     - beautifulsoup4
   run:
@@ -55,7 +55,7 @@ requirements:
     - pyxdg
     - requests
     - rich
-    - simber
+    - simber ==0.2.6
     - spotipy
     - unidecode
     - urllib3
