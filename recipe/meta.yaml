@@ -1,5 +1,5 @@
 {% set name = "ytmdl" %}
-{% set version = "2023.2.28" %}
+{% set version = "2023.7.27" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytmdl-{{ version }}.tar.gz
-  sha256: 8a6f843aaaab04ad6e5d655dbe5b1510b3cc767165f27e00f82e60fcea952b6c
+  sha256: b014736d447ecea4bc67383fb94e1b8c952bfe7d7fb5bd0aeaefc555310846c9
 
 build:
   entry_points:
