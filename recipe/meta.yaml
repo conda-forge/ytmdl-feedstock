@@ -19,50 +19,48 @@ build:
 
 requirements:
   host:
-    - bs4
-    - colorama
-    - downloader-cli
-    - ffmpeg-python
-    - itunespy
-    - musicbrainzngs
+    - python >=3.6
+    - yt-dlp >=2022.7.6
     - mutagen
+    - itunespy
+    - requests
+    - colorama
+    - beautifulsoup4
+    - downloader-cli >=0.3.4
+    - pyxdg
+    - ffmpeg-python
+    - pysocks
+    - unidecode
+    - youtube-search-python
+    - pydes
+    - urllib3
+    - simber ==0.2.6
+    - rich
+    - musicbrainzngs
+    - ytmusicapi
+    - spotipy
     - pip
-    - pydes
-    - pysocks
-    - python >=3.6
-    - pyxdg
-    - requests
-    - rich
-    - simber ==0.2.6
-    - spotipy
-    - unidecode
-    - urllib3
-    - youtube-search-python
-    - yt-dlp >=2022.03.08.1
-    - ytmusicapi
-    - beautifulsoup4
   run:
-    - bs4
-    - colorama
-    - downloader-cli
-    - ffmpeg-python
-    - itunespy
-    - musicbrainzngs
-    - mutagen
-    - pydes
-    - pysocks
     - python >=3.6
-    - pyxdg
+    - yt-dlp >=2022.7.6
+    - mutagen
+    - itunespy
     - requests
-    - rich
-    - simber ==0.2.6
-    - spotipy
-    - unidecode
-    - urllib3
-    - yt-dlp >=2022.03.08.1
-    - youtube-search-python
-    - ytmusicapi
+    - colorama
     - beautifulsoup4
+    - downloader-cli >=0.3.4
+    - pyxdg
+    - ffmpeg-python
+    - pysocks
+    - unidecode
+    - youtube-search-python
+    - pydes
+    - urllib3
+    - simber ==0.2.6
+    - rich
+    - musicbrainzngs
+    - ytmusicapi
+    - spotipy
 
 test:
   imports:
