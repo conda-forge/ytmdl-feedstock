@@ -1,5 +1,5 @@
 {% set name = "ytmdl" %}
-{% set version = "2023.7.27" %}
+{% set version = "2023.11.26" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytmdl-{{ version }}.tar.gz
-  sha256: b014736d447ecea4bc67383fb94e1b8c952bfe7d7fb5bd0aeaefc555310846c9
+  sha256: 226deb400b3f4d8a2892fe85786a54ead27150604c6fafd45b564c0e0f455b8b
 
 build:
   entry_points:
@@ -19,50 +19,48 @@ build:
 
 requirements:
   host:
-    - bs4
-    - colorama
-    - downloader-cli
-    - ffmpeg-python
-    - itunespy
-    - musicbrainzngs
+    - python >=3.6
+    - yt-dlp >=2022.7.6
     - mutagen
+    - itunespy
+    - requests
+    - colorama
+    - beautifulsoup4
+    - downloader-cli >=0.3.4
+    - pyxdg
+    - ffmpeg-python
+    - pysocks
+    - unidecode
+    - youtube-search-python
+    - pydes
+    - urllib3
+    - simber ==0.2.6
+    - rich
+    - musicbrainzngs
+    - ytmusicapi
+    - spotipy
     - pip
-    - pydes
-    - pysocks
-    - python >=3.6
-    - pyxdg
-    - requests
-    - rich
-    - simber ==0.2.6
-    - spotipy
-    - unidecode
-    - urllib3
-    - youtube-search-python
-    - yt-dlp >=2022.03.08.1
-    - ytmusicapi
-    - beautifulsoup4
   run:
-    - bs4
-    - colorama
-    - downloader-cli
-    - ffmpeg-python
-    - itunespy
-    - musicbrainzngs
-    - mutagen
-    - pydes
-    - pysocks
     - python >=3.6
-    - pyxdg
+    - yt-dlp >=2022.7.6
+    - mutagen
+    - itunespy
     - requests
-    - rich
-    - simber ==0.2.6
-    - spotipy
-    - unidecode
-    - urllib3
-    - yt-dlp >=2022.03.08.1
-    - youtube-search-python
-    - ytmusicapi
+    - colorama
     - beautifulsoup4
+    - downloader-cli >=0.3.4
+    - pyxdg
+    - ffmpeg-python
+    - pysocks
+    - unidecode
+    - youtube-search-python
+    - pydes
+    - urllib3
+    - simber ==0.2.6
+    - rich
+    - musicbrainzngs
+    - ytmusicapi
+    - spotipy
 
 test:
   imports:
