@@ -1,5 +1,5 @@
 {% set name = "ytmdl" %}
-{% set version = "2023.11.26" %}
+{% set version = "2024.08.15.1" %}
 
 
 package:
@@ -7,8 +7,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytmdl-{{ version }}.tar.gz
-  sha256: 226deb400b3f4d8a2892fe85786a54ead27150604c6fafd45b564c0e0f455b8b
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytmdl-{{ version }}.tar.gz no sdist avalaible
+  #sha256: 226deb400b3f4d8a2892fe85786a54ead27150604c6fafd45b564c0e0f455b8b no sdist avalaible
+  url: https://github.com/deepjyoti30/ytmdl/archive/{{ version }}.tar.gz
+  sha256: d6c95cb2e13e483dbbb2b670d6e3d92f7e881be574c86dbc24fe2373d8c29ebd
 
 build:
   entry_points:
@@ -19,8 +21,8 @@ build:
 
 requirements:
   host:
-    - python >=3.6
-    - yt-dlp >=2022.7.6
+    - python {{ python_min }}
+    - yt-dlp >=2024.4.9
     - mutagen
     - itunespy
     - requests
@@ -41,8 +43,8 @@ requirements:
     - spotipy
     - pip
   run:
-    - python >=3.6
-    - yt-dlp >=2022.7.6
+    - python >={{ python_min }}
+    - yt-dlp >=2024.4.9
     - mutagen
     - itunespy
     - requests
@@ -71,6 +73,7 @@ test:
     - ytmdl --help
   requires:
     - pip
+    - python >={{ python_min }}
 
 about:
   home: https://github.com/deepjyoti30/ytmdl
