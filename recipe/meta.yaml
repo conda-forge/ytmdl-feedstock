@@ -73,7 +73,7 @@ test:
     - ytmdl --help
   requires:
     - pip
-    - python >={{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/deepjyoti30/ytmdl
