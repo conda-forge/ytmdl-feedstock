@@ -42,6 +42,7 @@ requirements:
     - ytmusicapi
     - spotipy
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - yt-dlp >=2024.4.9
@@ -63,7 +64,6 @@ requirements:
     - musicbrainzngs
     - ytmusicapi
     - spotipy
-    - ffmpeg
 
 test:
   imports:
