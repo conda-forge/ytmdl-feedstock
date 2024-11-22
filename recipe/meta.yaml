@@ -64,7 +64,6 @@ requirements:
     - musicbrainzngs
     - ytmusicapi
     - spotipy
-    - pip <24
 
 test:
   imports:
