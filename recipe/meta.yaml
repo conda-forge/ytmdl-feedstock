@@ -16,7 +16,7 @@ build:
   entry_points:
     - ytmdl = ytmdl:entry
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -63,13 +63,14 @@ requirements:
     - musicbrainzngs
     - ytmusicapi
     - spotipy
+    - ffmpeg
 
 test:
   imports:
     - ytmdl
     - ytmdl.meta
   commands:
-  #  - pip check "ffmpeg-python 0.2.0 is not supported on this platform"
+    - pip check #"ffmpeg-python 0.2.0 is not supported on this platform"
     - ytmdl --help
   requires:
     - pip
