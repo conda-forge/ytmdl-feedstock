@@ -16,7 +16,7 @@ build:
   entry_points:
     - ytmdl = ytmdl:entry
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
