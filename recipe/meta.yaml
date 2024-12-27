@@ -70,7 +70,7 @@ test:
     - ytmdl
     - ytmdl.meta
   commands:
-    - pip check # "ffmpeg-python 0.2.0 is not supported on this platform"
+    - pip check
     - ytmdl --help
   requires:
     - pip
