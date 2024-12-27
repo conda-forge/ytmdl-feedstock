@@ -16,8 +16,8 @@ build:
   entry_points:
     - ytmdl = ytmdl:entry
   noarch: python
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 2
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -70,7 +70,7 @@ test:
     - ytmdl
     - ytmdl.meta
   commands:
-  #  - pip check "ffmpeg-python 0.2.0 is not supported on this platform"
+    - pip check
     - ytmdl --help
   requires:
     - pip
